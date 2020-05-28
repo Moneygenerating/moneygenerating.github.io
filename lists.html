@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Курс HTML и CSS | Урок 2 | Каталог</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">'
+	<link rel="stylesheet" href="css/lists.css">
+</head>
+<body>
+
+<!-- машинка начало !-->
+<div class="loading-window">
+	<div class="car">
+		<div class="strike"></div>
+		<div class="strike strike2"></div>
+		<div class="strike strike3"></div>
+		<div class="strike strike4"></div>
+		<div class="strike strike5"></div>
+		<div class="car-detail spoiler"></div>
+		<div class="car-detail back"></div>
+		<div class="car-detail center"></div>
+		<div class="car-detail center1"></div>
+		<div class="car-detail front"></div>
+		<div class="car-detail wheel"></div>
+		<div class="car-detail wheel wheel2"></div>
+	</div>
+
+	<div class="text">
+		<span>Loading</span><span class = "dots">...</span>
+	</div>
+</div>
+
+<!-- https://itchief.ru/javascript/how-to-make-preloader-for-site - Вставить сценарий, который будет добавлять к элементу body класс loaded после полной загрузки страницы -->
+<script>
+	window.onload = function () {
+		document.body.classList.add('loaded_hiding');
+		window.setTimeout(function () {
+			document.body.classList.add('loaded');
+			document.body.classList.remove('loaded_hiding');
+		}, 500);
+	}
+</script>
+
+<footer class=footer>
+	<h4 class="footer-author">&copy;&nbsp;Created by Martikyan MG</h4>
+</footer>
+
+</body>
+</html>
+
+<h1>Каталог</h1>
+<div align="center">
+
+	<p ><b>Цветы</b></p>
+		<ul class="catalog" >
+			<li>Живые цветы</li>
+			<li>Искусственные цветы</li>
+		</ul>
+	<p><b>Игрушки</b></p>
+	<ul class="toys">
+		<li>Мягкие игрушки</li>
+		<li>Конструкторы</li>
+	</ul>
+	<p><b>Книги</b></p>
+	<ul class="aid">
+		<li>Аудиокниги</li>
+		<li>В мягком переплете</li>
+	</ul>
+		</div>
+<h2>Меню</h2>
+<ul>
+
+	<li><a href="elements.html" target="_blank">Статьи </a><br /></li>
+	<li><a href="lists.html" target="_blank">Каталог</a><br /></li>
+	<li><a href="images.html" target="_blank">Галерея изображений</a><br /></li>
+	<li><a href="forms.html" target="_blank">Регистрация</a><br /></li>
+	<li><a href="contacts.html" target="_blank">Контакты</a></li>
+</ul>
+<footer class=footer>
+	<h4 class="footer-author">&copy;&nbsp;Created by Martikyan MG</h4>
+</footer>
+</body>
+</html>
+

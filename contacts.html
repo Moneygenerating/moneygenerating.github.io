@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/Contacts.css">
+</head>
+<body>
+
+ <h1 align="center">Контактные данные</h1>
+<h3 align="center">Наш адрес: <br></h3>
+<p align="center">г.Томск, ул.Октябрьская, д.10а</p>
+<h3 align="center">г.Томск, ул. Белая, д.3:</h3>
+ <div align="center">
+<img class="animated-gif" src="scheme/212.gif"/></div>
+
+ <div class="outer">
+     <div class="middle">
+         <div class="inner">
+
+             <div class="login-wr">
+                 <h2>Написать письмо</h2>
+
+                 <div class="form">
+                     <form action="send.php" method="POST">
+                         <input type="text" id="name" placeholder="Имя" required>
+                         <input type="email" id="email" placeholder="E-mail" required>
+                         <textarea id="message" required></textarea>
+                         <p>* Все поля обязательны для заполнения</p>
+                         <button type="submit" id="submit"> Отправить </button>
+                         <img src="loader.gif" id="loader" alt="">
+                         <div id="result"></div>
+                     </form>
+                 </div>
+
+             </div>
+
+         </div>
+     </div>
+ </div>
+
+
+ <footer class=footer>
+     <h4 class="footer-author">&copy;&nbsp;Created by Martikyan MG</h4>
+ </footer>
+
+
+</body>
+</html>
